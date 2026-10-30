@@ -1,58 +1,22 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { getProducts } from "../../api/products";
 import { Box, Typography, Grid, Button } from "@mui/material";
-import { CardColecao } from "../componentes/cardColecao";
-import { ProductListing, type Product } from "../componentes/cardProductList";
-import { Brightness1, East } from "@mui/icons-material";
+import { CardColecao } from "../../componentes/cardColecao";
+import { ProductListing, type Product } from "../../componentes/cardProductList";
+import { East } from "@mui/icons-material";
 
 // Importações do Swiper para o Carrossel
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
 
-// Importação dos estilos do Swiper
 import "swiper/css";
 import "swiper/css/pagination";
 
 import "./index.css";
 
 export function InicialPage() {
-    const products: Product[] = [
-        {
-            name: "Tênis V8 - Masculino",
-            image: "/product-thumb-1.jpeg",
-            price: 200,
-            priceDiscount: 100,
-        },
-        {
-            name: "Tênis V8 - Feminino",
-            image: "/product-thumb-2.jpeg",
-            price: 180,
-            priceDiscount: 90,
-        },
-        {
-            name: "Air Jordan edição limitada",
-            image: "/product-thumb-3.jpeg",
-            price: 500,
-            priceDiscount: 399.9,
-        },
-        {
-            name: "Tênis V8 - Masculino",
-            image: "/product-thumb-1.jpeg",
-            price: 200,
-            priceDiscount: 100,
-        },
-        {
-            name: "Tênis V8 - Feminino",
-            image: "/product-thumb-2.jpeg",
-            price: 180,
-            priceDiscount: 90,
-        },
-        {
-            name: "Air Jordan edição limitada",
-            image: "/product-thumb-3.jpeg",
-            price: 500,
-            priceDiscount: 399.9,
-        },
-    ];
+    const [products,setProducts]=useState<Product[]>([]);
+    useEffect(()=>{const ctrl=new AbortController();getProducts(ctrl.signal).then(p=>setProducts(p.slice(0,8))).catch(e=>{if(!ctrl.signal.aborted)console.error(e)});return ()=>ctrl.abort()},[]);
 
     const bannerSlides = [
         {
@@ -69,7 +33,7 @@ export function InicialPage() {
             title: "Nova Coleção Adidas 👟",
             description:
                 "Encontre os melhores modelos para o seu estilo com descontos imperdíveis nesta temporada.",
-            image: "/sapatoBaner.png", // Você pode trocar por outra imagem de banner se tiver
+            image: "/sapatoBaner.png", 
             ornament: "/Ornament 11.png",
             buttonText: "Conferir",
         },
@@ -206,7 +170,6 @@ export function InicialPage() {
                 </Swiper>
             </Box>
 
-            {/* SEÇÃO DE COLEÇÕES */}
             <Box
                 sx={{
                     mr: { xs: "20px", md: "100px" },
@@ -244,7 +207,6 @@ export function InicialPage() {
                 </Grid>
             </Box>
 
-            {/* SEÇÃO DE CATEGORIAS SCROLLÁVEL */}
             <Box
                 sx={{
                     mr: { xs: "20px", md: "100px" },
@@ -396,7 +358,6 @@ export function InicialPage() {
                 </Grid>
             </Box>
 
-            {/* PRODUTOS EM ALTA */}
             <Box
                 sx={{
                     mt: 4,
@@ -432,10 +393,9 @@ export function InicialPage() {
                         </Button>
                     </Box>
                 </Box>
-                <ProductListing products={products} />
+                <ProductListing columns={4} products={products} />
             </Box>
 
-            {/* SEÇÃO OFERTA ESPECIAL */}
             <Box
                 sx={{
                     mt: "235px",

@@ -109,3 +109,7 @@ code {
   padding: 4px 8px;
   background: var(--code-bg);
 }
+
+/* Ajuste para permitir que a tela de produto ocupe a largura disponível */
+#root { width: 100%; max-width: none; border: 0; text-align: left; }
+* { box-sizing: border-box; }

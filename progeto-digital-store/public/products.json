@@ -1,0 +1,167 @@
+[
+  {
+    "id": 1,
+    "name": "Tênis K-Swiss V8 - Masculino",
+    "image": "/product-thumb-1.jpeg",
+    "price": 200,
+    "priceDiscount": 100,
+    "brand": "Adidas",
+    "category": "Esporte",
+    "gender": "Masculino",
+    "condition": "Novo"
+  },
+  {
+    "id": 2,
+    "name": "Tênis Air Runner - Feminino",
+    "image": "/product-thumb-2.jpeg",
+    "price": 220,
+    "priceDiscount": 120,
+    "brand": "Nike",
+    "category": "Casual",
+    "gender": "Feminino",
+    "condition": "Novo"
+  },
+  {
+    "id": 3,
+    "name": "Tênis Street Classic",
+    "image": "/product-thumb-3.jpeg",
+    "price": 180,
+    "priceDiscount": 90,
+    "brand": "Puma",
+    "category": "Esporte",
+    "gender": "Masculino",
+    "condition": "Novo"
+  },
+  {
+    "id": 4,
+    "name": "Tênis Urban Move",
+    "image": "/product-thumb-4.jpeg",
+    "price": 250,
+    "priceDiscount": 150,
+    "brand": "Adidas",
+    "category": "Casual",
+    "gender": "Feminino",
+    "condition": "Novo"
+  },
+  {
+    "id": 5,
+    "name": "Tênis Performance Pro",
+    "image": "/product-thumb-5.jpeg",
+    "price": 300,
+    "priceDiscount": 200,
+    "brand": "Nike",
+    "category": "Esporte",
+    "gender": "Masculino",
+    "condition": "Novo"
+  },
+  {
+    "id": 6,
+    "name": "Tênis K-Swiss V8 - Feminino",
+    "image": "/product-thumb-1.jpeg",
+    "price": 210,
+    "priceDiscount": 110,
+    "brand": "Puma",
+    "category": "Casual",
+    "gender": "Feminino",
+    "condition": "Novo"
+  },
+  {
+    "id": 7,
+    "name": "Tênis Runner Essential",
+    "image": "/product-thumb-2.jpeg",
+    "price": 190,
+    "priceDiscount": 95,
+    "brand": "Adidas",
+    "category": "Esporte",
+    "gender": "Masculino",
+    "condition": "Novo"
+  },
+  {
+    "id": 8,
+    "name": "Tênis Casual Flow",
+    "image": "/product-thumb-3.jpeg",
+    "price": 230,
+    "priceDiscount": 130,
+    "brand": "Nike",
+    "category": "Casual",
+    "gender": "Feminino",
+    "condition": "Novo"
+  },
+  {
+    "id": 9,
+    "name": "Tênis Training Max",
+    "image": "/product-thumb-4.jpeg",
+    "price": 280,
+    "priceDiscount": 170,
+    "brand": "Puma",
+    "category": "Esporte",
+    "gender": "Masculino",
+    "condition": "Novo"
+  },
+  {
+    "id": 10,
+    "name": "Tênis Daily Comfort",
+    "image": "/product-thumb-5.jpeg",
+    "price": 160,
+    "priceDiscount": 80,
+    "brand": "Adidas",
+    "category": "Casual",
+    "gender": "Feminino",
+    "condition": "Novo"
+  },
+  {
+    "id": 11,
+    "name": "Tênis Speed Run",
+    "image": "/product-thumb-1.jpeg",
+    "price": 320,
+    "priceDiscount": 220,
+    "brand": "Nike",
+    "category": "Esporte",
+    "gender": "Masculino",
+    "condition": "Novo"
+  },
+  {
+    "id": 12,
+    "name": "Tênis Essential Street",
+    "image": "/product-thumb-2.jpeg",
+    "price": 175,
+    "priceDiscount": 85,
+    "brand": "Puma",
+    "category": "Casual",
+    "gender": "Feminino",
+    "condition": "Novo"
+  },
+  {
+    "id": 13,
+    "name": "Tênis Sport Advance",
+    "image": "/product-thumb-3.jpeg",
+    "price": 260,
+    "priceDiscount": 160,
+    "brand": "Adidas",
+    "category": "Esporte",
+    "gender": "Masculino",
+    "condition": "Novo"
+  },
+  {
+    "id": 14,
+    "name": "Tênis City Walk",
+    "image": "/product-thumb-4.jpeg",
+    "price": 240,
+    "priceDiscount": 140,
+    "brand": "Nike",
+    "category": "Casual",
+    "gender": "Feminino",
+    "condition": "Novo"
+  },
+  {
+    "id": 15,
+    "name": "Tênis Outdoor Pro",
+    "image": "/product-thumb-5.jpeg",
+    "price": 290,
+    "priceDiscount": 190,
+    "brand": "Puma",
+    "category": "Esporte",
+    "gender": "Masculino",
+    "condition": "Novo"
+  }
+]

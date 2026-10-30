@@ -46,7 +46,6 @@ export function Header() {
             position: "relative",
           }}
         >
-          {/* Botão do Menu Hamburguer (Visível apenas no mobile) */}
           <IconButton
             color="inherit"
             aria-label="abrir menu"
@@ -57,7 +56,6 @@ export function Header() {
             <MenuIcon />
           </IconButton>
 
-          {/* Logo (Centralizada no mobile, fluxo normal no desktop) */}
           <Box
             component="img"
             src={logoHeader}
@@ -71,7 +69,6 @@ export function Header() {
             }}
           />
 
-          {/* Campo de Pesquisa Desktop */}
           <TextField
             placeholder="Pesquisar produto..."
             size="small"
@@ -92,7 +89,6 @@ export function Header() {
             }}
           />
 
-          {/* Links e Botões Desktop */}
           <Box
             sx={{
               display: { xs: "none", md: "flex" },
@@ -131,7 +127,6 @@ export function Header() {
             />
           </Box>
 
-          {/* Ícones do Lado Direito no Mobile (Lupa + Carrinho) */}
           <Box
             sx={{
               display: { xs: "flex", md: "none" },
@@ -161,7 +156,6 @@ export function Header() {
           </Box>
         </Toolbar>
 
-        {/* Campo de Pesquisa Retrátil no Mobile */}
         {searchOpen && (
           <Box sx={{ pb: 2, display: { xs: "block", md: "none" } }}>
             <TextField
@@ -183,7 +177,6 @@ export function Header() {
           </Box>
         )}
 
-        {/* Menu Desktop (Abaixo do toolbar) */}
         <Box
           className="menu"
           sx={{
@@ -207,7 +200,6 @@ export function Header() {
           </Link>
         </Box>
 
-        {/* MODAL / MENU LATERAL MOBILE */}
         <Modal
           open={mobileOpen}
           onClose={handleDrawerToggle}
@@ -233,7 +225,6 @@ export function Header() {
               justifyContent: "space-between",
             }}
           >
-            {/* Conteúdo Superior do Modal */}
             <Box>
               <Box
                 sx={{
@@ -290,7 +281,6 @@ export function Header() {
               </Box>
             </Box>
 
-            {/* Conteúdo Inferior do Modal (Botões de Autenticação) */}
             <Box
               sx={{ display: "flex", flexDirection: "column", gap: 2, pb: 2 }}
             >
