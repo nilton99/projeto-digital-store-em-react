@@ -615,3 +615,11 @@ Dentro do componente `<Section />` deve ser passado como filho o componente `<Pr
 ![layout-product-view-page](./doc/layout/product-view-page.png)
 </details>
 </details>
+
+## Novas telas — fluxo de compra (demonstração)
+
+Rotas adicionadas: `/carrinho`, `/checkout`, `/pedido-confirmado/:id`, `/login`, `/cadastro`, `/pedidos`, `/minhas-informacoes`, `/metodos-pagamento`. O ícone do carrinho no cabeçalho abre a prévia no desktop e o botão Comprar da página do produto adiciona o item ao carrinho.
+
+**Integração:** catálogo e detalhes continuam na API DummyJSON (`src/api/products.ts`); o cálculo de endereço por CEP chama ViaCEP. Carrinho, cadastro e pedidos são demonstrativos, persistidos no `localStorage` do próprio navegador. **Não há autenticação de servidor, processamento de pagamentos, cálculo de frete real ou envio de pedidos para uma API de pedidos.** Não use senhas reais nem dados pessoais verdadeiros para testar. O formulário de pagamento não recebe dados de cartão.
+
+**Como executar:** instale as dependências com `npm install`; em seguida `npm run dev`. Para conferir os tipos, `npx tsc -b`; para gerar a versão de produção, `npm run build`. As dependências de execução não estão incluídas neste ZIP. A etapa de checagem TypeScript foi realizada nesta entrega, mas o build do Vite não pôde ser concluído neste ambiente por dependências incompletas extraídas do ZIP de origem.
